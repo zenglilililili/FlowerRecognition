@@ -1,0 +1,19 @@
+<!--pages/recognition/recognition.wxml-->
+
+<view class="page-body" style="opacity:{{1}}">
+  <image class="bg-image" mode="scaleToFill" src='../../data/f3.jpeg'>
+  </image>
+  <View class="block1">
+    <view class="btn-area" id="buttonContainer">
+      <button class="btn1" bindtap="photograph">
+        <image class="takephoto" src="{{src_choose}}"></image>
+        <text class="txt">拍照识别</text>
+        
+      </button>
+    </view>
+    <view class="page-section page-section-spacing">
+      <button bindtap="choose" class="btn2">从相册上传></button>
+      <image mode="widthFix" src="{{src}}"></image>
+    </view>
+  </View>
+</view>

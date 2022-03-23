@@ -1,0 +1,12 @@
+/* pages/photograph/photograph.wxss */
+.btn{
+  background-color: #83C2C2;
+  color: #ffffff;
+  margin: 5px;
+  position: relative;
+}
+.imgF{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

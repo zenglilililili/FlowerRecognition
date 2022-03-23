@@ -1,0 +1,33 @@
+<!--pages/article/article.wxml-->
+<!-- -->
+<view class='page-body' wx:for="{{resList}}" wx:key="id">
+  <navigator url='../result/result?flowerName={{item.flowerName}}&latinName={{item.latinName}}&detail1={{item.detail1}}&detail2={{item.detail2}}&src={{item.src}}'>
+    <!-- <view class='body'> -->
+
+    <view class="item">
+      <view class="imgCon">
+        <image class="img1" src="../../data/{{item.flowerName}}.jpg"  ></image>
+      </view>
+      <view class="content1">
+        <view class="title">
+          <text>【文章科普】</text>
+        </view>
+        <view class="detail">
+          <text>{{item.detail1}}</text>
+        </view>
+      </view>
+      <view class="content2">
+       
+        <view class="like">
+          <image class="img2" src="{{src_like}}"></image>
+          <text class="txt">{{item.like}}</text>
+        </view>
+        <view class="lookup">
+          <image class="img2" src="{{src_lookup}}"></image>
+          <text class="txt">{{item.lookup}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- </view> -->
+  </navigator>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/result/result.wxml-->
+<view>
+  <view class="container1" hidden="{{hiddenName}}">
+    <View class="con1">
+      <image class="img1" src="{{res.src}}" style="height: 250px;margin: 0;" mode="aspectFill"></image>
+      <image class="imgDownload" src="../../data/相机_s.png"></image>
+    </View>
+  </view>
+  <view class="container2">
+    <view class="txtCon flowerName">
+      <text>{{res.flowerName}}</text>
+    </view>
+    <view class="txtCon latinName">
+      <text>拉丁名： {{res.latinName}}</text>
+    </view>
+    <view class="txtCon detail">
+      <text>{{res.detail1}}</text>
+    </view>
+    <view class="txtCon detail">
+      <text>{{res.detail2}}</text>
+    </view>
+  </view>
+  <view class="container3">
+    <image class="img2" mode="aspectFill" src="{{res.similar}}"></image>
+    <text class="txt">更多相似花卉</text>
+  </view>
+  <view class="container4">
+    <button class="btn">结果有错误？</button>
+  </view>
+</view>

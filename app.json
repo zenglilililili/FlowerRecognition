@@ -1,0 +1,46 @@
+{
+  "pages": [
+    
+    "pages/recognition/recognition",
+    "pages/article/article",
+    "pages/game/game",
+    "pages/photograph/photograph",
+    "pages/result/result"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/article/article",
+        "iconPath": "data/知识.png",
+        "selectedIconPath": "data/知识2.png",
+        "text": "知识科普"
+      },
+      {
+        "pagePath": "pages/recognition/recognition",
+        "iconPath": "data/相机.png",
+        "selectedIconPath": "data/相机2.png",
+        "text": "花卉识别"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "iconPath": "data/我来回答.png",
+        "selectedIconPath": "data/我来回答2.png",
+        "text": "趣味问答"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一起识花卉",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

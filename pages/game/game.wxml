@@ -1,0 +1,23 @@
+<!--pages/game/game.wxml-->
+<view class="body">
+  <view class="imgCon">
+    <image class="img" src="../../data/{{gameList[randomNum].flowerName}}.jpg"></image>
+    <image class="imgDownload" src="../../data/下载.png"></image>
+    
+  </view>
+  <view class="content">
+    <view class="title">
+      <text>趣味问答</text>
+    </view>
+    <view class="question">
+      <text>{{gameList[randomNum].question}}</text>
+    </view>
+    <view class="options">
+      <button class="btn" bindtap="check" data-choice="A" data-answer="{{gameList[randomNum].answer}}" style="background:{{btnColor[0]}};color:{{txtColor[0]}}">A {{gameList[randomNum].optionA}}</button>
+      <button class="btn" bindtap="check" data-choice="B" data-answer="{{gameList[randomNum].answer}}" style="background:{{btnColor[1]}};color:{{txtColor[1]}}">B {{gameList[randomNum].optionB}}</button>
+      <button class="btn" bindtap="check" data-choice="C" data-answer="{{gameList[randomNum].answer}}" style="background:{{btnColor[2]}};color:{{txtColor[2]}}">C {{gameList[randomNum].optionC}}</button>
+      <button class="btn" bindtap="check" data-choice="D" data-answer="{{gameList[randomNum].answer}}" style="background:{{btnColor[3]}};color:{{txtColor[3]}}">D {{gameList[randomNum].optionD}}</button>
+    </view>
+    
+  </view>
+</view>
